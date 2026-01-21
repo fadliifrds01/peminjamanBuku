@@ -20,14 +20,14 @@
                 <a href="{{ route('dashboard') }}"
                     class="flex items-center px-6 py-3 bg-blue-50 text-blue-600 border-r-4 border-blue-600">
                     <i class="ph ph-layout text-xl mr-3"></i>
-                    <span class="font-medium">Dashboard</span>
+                    <span class="font-semibold">Dashboard</span>
                 </a>
                 <a href="{{ route('dataBuku') }}"
                     class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-100 ease-in">
                     <i class="ph ph-books text-xl mr-3"></i>
                     <span>Kelola Data Buku</span>
                 </a>
-                <a href="#"
+                <a href="{{ route('transaction') }}"
                     class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-100 ease-in">
                     <i class="ph ph-arrows-left-right text-xl mr-3"></i>
                     <span>Transaksi</span>
@@ -59,7 +59,7 @@
                 <h2 class="text-xl font-bold text-gray-700 mb-6">Aksi Cepat</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <a href="#"
+                    <a href="{{ route('dataBuku') }}"
                         class="group p-6 bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all">
                         <div
                             class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">

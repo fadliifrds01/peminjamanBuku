@@ -32,7 +32,7 @@
                     <i class="ph ph-arrows-left-right text-xl mr-3"></i>
                     <span>Transaksi</span>
                 </a>
-                <a href="#"
+                <a href="{{ route('anggota') }}"
                     class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-100 ease-in">
                     <i class="ph ph-users text-xl mr-3"></i>
                     <span>Kelola Anggota</span>
@@ -69,7 +69,7 @@
                         <p class="text-gray-500 text-sm mt-2">Tambah, edit, atau hapus koleksi buku perpustakaan.</p>
                     </a>
 
-                    <a href="#"
+                    <a href="{{ route('transaction') }}"
                         class="group p-6 bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all">
                         <div
                             class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors">
@@ -79,7 +79,7 @@
                         <p class="text-gray-500 text-sm mt-2">Catat peminjaman dan pengembalian buku dengan mudah.</p>
                     </a>
 
-                    <a href="#"
+                    <a href="{{ route('anggota') }}"
                         class="group p-6 bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all">
                         <div
                             class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors">

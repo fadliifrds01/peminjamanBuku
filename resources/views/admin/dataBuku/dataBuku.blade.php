@@ -55,39 +55,137 @@
                     <h1 class="text-3xl font-bold text-gray-800">Kelola Data Buku</h1>
                     <p class="text-gray-500 text-sm">Kelola koleksi buku perpustakaan Anda di sini.</p>
                 </div>
-                <button
+                <a href="{{ route('inputBuku') }}"
                     class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center transition-all">
                     <i class="ph ph-plus-circle text-xl mr-2"></i>
                     Tambah Buku
-                </button>
+                </a>
             </div>
 
             <div class="w-full bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
                 <table class="w-full text-left border-collapse">
                     <thead class="bg-gray-50 border-b border-gray-100">
                         <tr>
-                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">Judul Buku</th>
-                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">Pengarang</th>
-                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">Kategori</th>
-                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">Aksi</th>
+                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase">
+                                No
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase">
+                                Buku
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase">
+                                Judul Buku
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">
+                                Pengarang
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">
+                                Kategori
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">
+                                Stok
+                            </th>
+                            <th class="px-6 py-4 text-sm font-semibold text-gray-600 uppercase text-center">
+                                Aksi
+                            </th>
                         </tr>
                     </thead>
+
                     <tbody class="divide-y divide-gray-100">
                         <tr class="hover:bg-gray-50 transition-colors">
                             <td class="px-6 py-4">
-                                <div class="font-medium text-gray-800">Laskar Pelangi</div>
-                                <div class="text-xs text-gray-400 font-mono">ID: BUK-001</div>
+                                1
                             </td>
-                            <td class="px-6 py-4 text-gray-600 text-sm">Andrea Hirata Andrea Hirata Andrea Hirata </td>
+
                             <td class="px-6 py-4">
-                                <span
-                                    class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full uppercase font-bold italic">Novel</span>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://via.placeholder.com/60x80" alt="Cover Buku"
+                                        class="w-14 h-20 object-cover rounded-md shadow">
+                                </div>
                             </td>
+
+                            <td class="px-6 py-4">
+                                <div>
+                                    <div class="font-medium text-gray-800">
+                                        Laskar Pelangi
+                                    </div>
+                                    <div class="text-xs text-gray-400 font-mono">
+                                        ID: BUK-001
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4 text-gray-600 text-sm text-center">
+                                Andrea Hirata
+                            </td>
+
+                            <td class="px-6 py-4 text-center">
+                                <span
+                                    class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full uppercase font-bold italic">
+                                    Novel
+                                </span>
+                            </td>
+
+                            <td class="px-6 py-4 text-center">
+                                <span class="text-xs px-2 py-1 font-bold">
+                                    10
+                                </span>
+                            </td>
+
+                            <td>
+                                <div class="flex justify-center gap-3">
+                                    <button class="text-blue-600 hover:text-blue-800"><i
+                                            class="ph ph-pencil-line text-xl"></i></button>
+                                    <button class="text-red-500 hover:text-red-600" title="Hapus">
+                                        <i class="ph ph-trash text-xl"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="px-6 py-4">
+                                2
+                            </td>
+
+                            <td class="px-6 py-4">
+                                <div class="flex items-center gap-4">
+                                    <img src="https://via.placeholder.com/60x80" alt="Cover Buku"
+                                        class="w-14 h-20 object-cover rounded-md shadow">
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4">
+                                <div>
+                                    <div class="font-medium text-gray-800">
+                                        Laskar Pelangi
+                                    </div>
+                                    <div class="text-xs text-gray-400 font-mono">
+                                        ID: BUK-001
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4 text-gray-600 text-sm text-center">
+                                Andrea Hirata
+                            </td>
+
+                            <td class="px-6 py-4 text-center">
+                                <span
+                                    class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full uppercase font-bold italic">
+                                    Novel
+                                </span>
+                            </td>
+
+                            <td class="px-6 py-4 text-center">
+                                <span class="text-xs px-2 py-1 font-bold">
+                                    10
+                                </span>
+                            </td>
+
                             <td class="px-6 py-4">
                                 <div class="flex justify-center gap-3">
-                                    <button class="text-amber-500 hover:text-amber-600" title="Edit">
-                                        <i class="ph ph-pencil-simple text-xl"></i>
-                                    </button>
+                                    <button class="text-blue-600 hover:text-blue-800"><i
+                                            class="ph ph-pencil-line text-xl"></i></button>
                                     <button class="text-red-500 hover:text-red-600" title="Hapus">
                                         <i class="ph ph-trash text-xl"></i>
                                     </button>
@@ -95,8 +193,10 @@
                             </td>
                         </tr>
                     </tbody>
+
                 </table>
             </div>
+
         </main>
     </div>
 

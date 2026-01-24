@@ -55,11 +55,11 @@
                     <h1 class="text-3xl font-bold text-gray-800">Kelola Anggota</h1>
                     <p class="text-gray-500">Manajemen data anggota perpustakaan.</p>
                 </div>
-                <button
+                <a href="{{ route('inputAnggota') }}"
                     class="flex items-center bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-all shadow-sm">
                     <i class="ph ph-user-plus text-xl mr-2"></i>
                     Tambah Anggota Baru
-                </button>
+                </a>
             </header>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -93,6 +93,7 @@
                     <table class="w-full text-left">
                         <thead class="bg-gray-50">
                             <tr>
+                                <th class="px-6 py-4 text-sm font-semibold text-gray-600">No</th>
                                 <th class="px-6 py-4 text-sm font-semibold text-gray-600">ID Anggota</th>
                                 <th class="px-6 py-4 text-sm font-semibold text-gray-600">Nama Lengkap</th>
                                 <th class="px-6 py-4 text-sm font-semibold text-gray-600">Email</th>
@@ -103,6 +104,7 @@
                         </thead>
                         <tbody class="divide-y divide-gray-100">
                             <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 text-sm font-medium">1</td>
                                 <td class="px-6 py-4 text-sm font-medium text-blue-600">#LIB-001</td>
                                 <td class="px-6 py-4 text-sm text-gray-800">Andi Saputra</td>
                                 <td class="px-6 py-4 text-sm text-gray-500">andi@email.com</td>
@@ -121,6 +123,7 @@
                                 </td>
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="px-6 py-4 text-sm font-medium">2</td>
                                 <td class="px-6 py-4 text-sm font-medium text-blue-600">#LIB-002</td>
                                 <td class="px-6 py-4 text-sm text-gray-800">Siti Aminah</td>
                                 <td class="px-6 py-4 text-sm text-gray-500">siti@email.com</td>
